@@ -12,6 +12,7 @@ static void stats_print(struct taskset *ts)
   i = 0; n = 1;
   while(n > 0) {
     n = scheduling_points(ts, i, t, 128);
+
     if (n > 0) {
       unsigned int j;
 

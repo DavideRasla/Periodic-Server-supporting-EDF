@@ -1,7 +1,7 @@
 #include "task.h"
 #include "taskset.h"
 #include "dbf.h"
-
+#include <stdio.h>
 static unsigned int my_ceil(unsigned int n, unsigned int d)
 {
   unsigned int q;
@@ -47,6 +47,11 @@ unsigned int dbf(const struct taskset *ts, unsigned int n, unsigned int t)
   }
 
   return res;
+}
+
+unsigned int check_EDF(const struct taskset *ts, unsigned int n)
+{
+
 }
 
 unsigned int check_n(const struct taskset *ts, unsigned int n)
