@@ -16,7 +16,7 @@ static void stats_print(struct taskset *ts)
     if (n > 0) {
       unsigned int j;
 
-      printf("T%d scheduling points (%d): ", i, n);
+      printf("T%d has %d scheduling points: ", i, n);
       for (j = 0; j < (unsigned int)n; j++) {
         printf(" %u", t[j]);
       }
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
   ts_print(ts, stdout);
   stats_print(ts);
 
-  printf("Is schedulable: %d\n", check(ts));
-
+  printf("Is schedulable with RM ? : %d\n", check(ts));
+  printf("Is schedulable with EDF ? : %d\n", check_with_EDF(ts));
   return 0;
 }
