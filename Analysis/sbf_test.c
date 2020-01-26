@@ -7,10 +7,9 @@ int main(int argc, char *argv[])
 {
   unsigned int q, t, s;
 
-  if (argc < 3) {
-    fprintf(stderr, "Usage: %s <Q> <T>\n", argv[0]);
-
-    return -1;
+ if (argc < 3) {
+fprintf(stderr, "Usage: %s <Q> <T>\n", argv[0]);
+return -1;
   }
   q = atoi(argv[1]);
   t = atoi(argv[2]);

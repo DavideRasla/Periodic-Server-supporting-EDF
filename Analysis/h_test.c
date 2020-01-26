@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <math.h>
 #include "task_io.h"
 #include "dbf.h"
 #include "sbf.h"

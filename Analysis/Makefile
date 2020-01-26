@@ -1,6 +1,6 @@
 CFLAGS=-Wall -Wextra -pedantic
 CFLAGS+=-std=c11
-
+LDLIBS = -lm
 all: h_test sbf_test tda_test
 
 h_test:   h_test.o   dbf.o task_io.o sbf.o
